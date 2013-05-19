@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130519144846) do
+ActiveRecord::Schema.define(:version => 20130519150336) do
 
   create_table "places", :force => true do |t|
     t.string   "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20130519144846) do
     t.string   "category"
     t.string   "display_type"
     t.string   "display_price"
+    t.string   "image_name"
   end
 
 end

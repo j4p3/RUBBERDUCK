@@ -1,4 +1,9 @@
 Rubberduck::Application.routes.draw do
+  root to: 'itineraries#home'
+  match '/create', to: 'itineraries#create'
+  match ':area' => 'itineraries#show'
+  match 'submit', to: 'itineraries#submit'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

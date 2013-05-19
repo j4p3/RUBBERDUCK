@@ -3,7 +3,7 @@ class ItinerariesController < ApplicationController
   end
 
   def show
-	@places = Place.find_by_area(params[:area])
+	@places = Place.where("area = ?", params[:area])
   end
 
   def submit

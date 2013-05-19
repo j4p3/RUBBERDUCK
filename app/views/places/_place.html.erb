@@ -1,0 +1,19 @@
+<div class="place row-fluid well" id="morning">
+	<!-- @TODO replace this id="morning" with place.time_slot -->
+	<div class="span1 control" data-direction="left">
+		<div class="triangle left"></div>
+	</div>
+	<div class="span3">
+		<%= image_tag("rails.png", :class => "img-polaroid") %>
+	</div>
+	<div class="span7">
+		<span>
+			<h2><%= place.name %></h2>
+			<p><%= place.area %></p>
+		</span>
+		<p><%= place.desc %></p>
+	</div>
+	<div class="span1 control" data-direction="right">
+		<div class="triangle right"></div>
+	</div>
+</div>

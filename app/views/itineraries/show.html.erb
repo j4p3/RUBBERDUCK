@@ -1,2 +1,13 @@
-<h1>Itineraries#show</h1>
-<p>Find me in app/views/itineraries/show.html.erb</p>
+<div class="container">
+	<div class="row-fluid">
+		<span>
+			<h1>Your one-day itinerary:</h1>
+		</span>
+	</div>
+	<%= render @places %>
+	<div class="row-fluid offset">
+        <form id="submit" action="submit">
+            <button class="btn btn-large btn-block btn-danger start">send plan to my email</button>
+        </form>
+	</div>
+</div>

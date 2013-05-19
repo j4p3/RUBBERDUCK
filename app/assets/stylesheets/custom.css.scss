@@ -1,0 +1,112 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import "flat-ui";
+
+
+//	DEFAULTS
+
+body {
+	background-image: image-url("polaroid.png");
+	background-position: initial initial;
+	background-repeat: initial initial;
+}
+
+//	HOME PAGE
+
+nav.row {
+	margin: 8px;
+}
+
+.hero-unit {
+	text-align: center;
+}
+
+.navbar-unread {
+	right: -15px;
+	/* Safari */
+	-webkit-transform: rotate(9deg);
+	/* Firefox */
+	-moz-transform: rotate(9deg);
+	/* IE */
+	-ms-transform: rotate(9deg);
+	/* Opera */
+	-o-transform: rotate(9deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-.3);
+}
+
+.offset {
+	margin-top:40px;
+}
+
+button.start {
+	font-size: 40px;
+	font-style: bold;
+	height:80px;
+	width: 80%;
+	margin: auto;
+}
+button.itinerary_selector {
+	border: 4px solid transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+button.itinerary_selector.active {
+	border: 4px solid #E74C3C;
+}
+
+//	PLACES
+
+.place {
+	height: 120px;
+
+	img {
+		height: 80px;
+		margin: 15px 0;
+	}
+
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	margin: 10px 0;
+
+	&.left {
+		border-right: 50px solid #34495e;
+	}
+	&.right {
+		border-left: 50px solid #34495e;
+	}
+}
+
+.control {
+	cursor: pointer;
+}
+
+
+//	MEDIA QUERIES
+@media (min-width: 960px) {
+
+//	HOME
+	.itinerary {
+		button {
+			line-height: 60px;
+			margin-bottom: 10px;
+			:last-child {
+				margin-bottom:0px;
+			}
+		}
+	}
+
+	img.match-buttons {
+		height: 300px;
+	}
+
+}

@@ -1,6 +1,6 @@
 Rubberduck::Application.routes.draw do
   root to: 'itineraries#home'
-  match '/create', to: 'itineraries#create'
+  match 'create', to: 'itineraries#create'
   match ':area' => 'itineraries#show'
   match 'submit', to: 'itineraries#submit'
 

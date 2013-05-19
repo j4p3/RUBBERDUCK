@@ -1,2 +1,25 @@
-<h1>Itineraries#home</h1>
-<p>Find me in app/views/itineraries/home.html.erb</p>
+<div class="container">	
+	<div class="hero-unit">
+		<h1>instant one-day adventure!</h1>
+		<h3>select a region and press start.</h3>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+			<div class="itinerary">
+				<button class="itinerary_selector btn btn-large btn-block btn-primary" id="hong_kong_island">Hong Kong Island</button>
+				<button class="itinerary_selector btn btn-large btn-block btn-primary" id="kowloon">Kowloon Peninsula</button>
+				<button class="itinerary_selector btn btn-large btn-block btn-primary" id="new_territories">New Territories</button>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="span8">
+			<%= image_tag("hk-above.jpg", :class => "img-circle match-buttons") %>
+		</div>
+	</div>
+	<div class="row-fluid offset">
+        <form id="submit" action="">
+            <button class="btn btn-large btn-block btn-danger start">start adventure!</button>
+        </form>
+	</div>
+</div>
+

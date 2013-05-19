@@ -63,11 +63,8 @@ button.itinerary_selector.active {
 //	PLACES
 
 .place {
-	height: 120px;
-
 	img {
-		height: 80px;
-		margin: 15px 0;
+		height: 110px;
 	}
 
 }
@@ -89,7 +86,6 @@ button.itinerary_selector.active {
 .control {
 	cursor: pointer;
 }
-
 
 //	MEDIA QUERIES
 @media (min-width: 960px) {

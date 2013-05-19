@@ -3,7 +3,7 @@ module ItinerariesHelper
 		case area
 		when "hong_kong_island"
 			"Hong Kong Island"
-		when "kowloon"
+		when "Kowloon"
 			"Kowloon"
 		when "new_territories"
 			"New Territories"

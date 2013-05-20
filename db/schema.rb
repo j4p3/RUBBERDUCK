@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130519150336) do
+ActiveRecord::Schema.define(:version => 20130520054356) do
 
   create_table "places", :force => true do |t|
     t.string   "name"
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(:version => 20130519150336) do
     t.string   "display_type"
     t.string   "display_price"
     t.string   "image_name"
+  end
+
+  create_table "signups", :force => true do |t|
+    t.string   "email"
+    t.text     "comment"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

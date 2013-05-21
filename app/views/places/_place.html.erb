@@ -1,4 +1,4 @@
-<div class="place row-fluid well" id="<%= "place#{place.id}" %>" timeslot="<%= place.time_slot %>">
+<div class="place row-fluid well <%= place.time_slot %>" id="<%= "place#{place.id}" %>" timeslot="<%= place.time_slot %>">
 	<!-- @TODO replace this id="morning" with place.time_slot -->
 	<div class="span1 control" data-direction="left">
 		<div class="triangle left"></div>
@@ -8,8 +8,8 @@
 	</div>
 	<div class="span8">
 		<div class="row-fluid">
-			<span class="span4"><h2><%= place.name %></h2></span>
-			<span class="span3 pull-right">
+			<span><h2><%= place.time_slot %>: <%= place.name %></h2></span>
+			<span class="span3">
               <!--<p class="label label-info"><%#= place.area %></p>-->
               <p class="label label-info"><%= place.display_type %></p>
             </span>

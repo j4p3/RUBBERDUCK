@@ -87,6 +87,11 @@ button.itinerary_selector.active {
 	cursor: pointer;
 }
 
+.Dinner, .Lunch {
+	background-color: #F1C40F;
+	border: 1px solid #F39C12;
+}
+
 //	MEDIA QUERIES
 @media (min-width: 960px) {
 

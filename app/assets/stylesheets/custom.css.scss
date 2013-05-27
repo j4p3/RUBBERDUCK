@@ -48,16 +48,15 @@ button.start {
 }
 button.itinerary_selector {
 	border: 4px solid transparent;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-button.itinerary_selector.active {
-	border: 4px solid #E74C3C;
+	.active {
+		border: 4px solid #E74C3C;
+		.disabled {
+			border: 4px solid transparent;
+		}
+	}
+	.disabled:hover{
+		background-color: #1abc9c;
+	}
 }
 
 //	PLACES
